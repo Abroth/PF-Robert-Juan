@@ -90,7 +90,7 @@ header{
     display: flex;
     height: 100%;
     width: 90%;
-
+    justify-content: end;
 }
 
 .nav__label{
@@ -327,8 +327,19 @@ footer{
 a{
     text-decoration: none;
     color: black;
+    height: 2vh;
+    width: 7vw;
+    border-radius: 15px;
 }
 
+a:hover{
+    background-color: #333e51;
+    color: #eeeeee;
+}
+
+li{
+    display: flex;
+}
 
 
 /* ============================PAGINA NOSOTROS============================ */
@@ -474,19 +485,26 @@ a{
     header{
         height: 85vh;
     }
-
-    
-
-    .nav-lista{
-        display: flex;
-        gap: 50px;
-        padding-right: 5vw;
-    }
-
-    
 }
 
 @media (min-width: 1024px) {
+
+    .nav__label{
+        display: none;
+    }
+
+    .nav-bar{
+        width: 100%;
+    }
+
+    .nav-lista{
+        position: relative;
+        display: flex;
+        top: 0;
+        justify-content: end;
+        gap: 30px;
+        
+    }
 
     .tarjetas-container{
         display: grid;
