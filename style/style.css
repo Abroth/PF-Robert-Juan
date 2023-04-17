@@ -84,34 +84,42 @@ header{
 
 /* ---------NavBar----------- */
 
-nav{
+
+
+.nav__container{
+    display: flex;
+    height: 100%;
+    width: 90%;
+
+}
+
+.nav__label{
+    display: block;
+    cursor: pointer;
+}
+
+.nav__input{
     display: none;
 }
 
 .nav-lista{
-    display: flex;
-    gap: 50px;
-    padding-right: 5vw;
-}
-
-ul{
-    display: flex;
-}
-
-li{
-    display: flex;
+    display: none;
+    position: fixed;
+    top: 72px;
+    bottom: 0;
+    background: white;
+    width: 100%;
+    left: 0;
     
 }
 
-.nav__link{
-    padding: 0.5rem 0.7rem;
-    border-radius: 5px;
-}
+.nav__input:checked + .nav-lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+} 
 
-.nav__link:hover{
-    background-color: #333e51;
-    color:#eeeeee;
-}
 
 
 /* =========================INDEX=========================== */
@@ -467,8 +475,12 @@ a{
         height: 85vh;
     }
 
-    nav{
-        display: block;
+    
+
+    .nav-lista{
+        display: flex;
+        gap: 50px;
+        padding-right: 5vw;
     }
 
     
