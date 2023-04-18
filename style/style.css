@@ -105,24 +105,26 @@ header{
 .nav-lista{
     display: none;
     position: fixed;
-    top: 72px;
+    top: 71px;
     bottom: 0;
     background: white;
-    width: 100%;
-    left: 0;
+    width: 30%;
+    right: 0;
     
 }
 
 .nav__input:checked + .nav-lista{
+
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: start;
 } 
 
 .nav-links{
     display: flex;
-    gap: 5vw;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 3vh;
 }
 
 
