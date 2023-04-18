@@ -110,7 +110,7 @@ header{
     background: white;
     width: 30%;
     right: 0;
-    
+    border-left: 2px solid black;
 }
 
 .nav__input:checked + .nav-lista{
@@ -511,9 +511,13 @@ li{
         position: relative;
         display: flex;
         top: 0;
-        justify-content: end;
+        border: 0;
+    }
+
+    .nav-links{
+        display: flex;
+        flex-direction: row;
         gap: 30px;
-        
     }
 
     .tarjetas-container{
