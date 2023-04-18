@@ -20,6 +20,11 @@ header{
     height: 35vh;
 }
 
+.header-contacto{
+    width: 100vw;
+    height: 72px;
+}
+
 .header-index{
     background-image: url(../img/EdificioPortada.jpg);
     background-repeat: no-repeat;
@@ -60,11 +65,11 @@ header{
 }
 
 /* -------Header proyectos------- */
-.header-contacto{
+/* .header-contacto{
     background-image: url(../img/img-Arquitectura4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .header-container{
     background-color: white;
@@ -89,7 +94,7 @@ header{
 .nav__container{
     display: flex;
     height: 100%;
-    width: 90%;
+    width: 100vw;
     justify-content: end;
 }
 
@@ -468,6 +473,95 @@ li{
 }
 
 
+/* ===================================Contacto========================================= */
+.box__container{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 10px 5px;
+}
+
+.box__container:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/img-Arquitectura4.jpg) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+
+}
+
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #d1d1d1c5;
+    width: 1200px;
+    padding: 10vh 5vw;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+
+}
+
+.contact-title{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.field{
+    width: 100%;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.733);
+    font-size: 1.5rem;
+    margin-bottom: 22px;
+    transition:  .3s;
+}
+
+.field:hover{
+    background-color:#fff;
+    color:#333e51;
+}
+
+.field:focus{
+    background-color: #fff;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+    color: #333e51;
+}
+
+.area{
+    min-height: 150px;
+}
+
+.btn{
+    width: 100%;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    background-color: #333e51;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: #212833;
+    color: #e4e4e4;
+}     
+
+
+
 
 /* ========================================Responsive======================================= */
 
@@ -488,6 +582,7 @@ li{
         height: 40vh;
     }
 
+    
    
 }
 
@@ -495,9 +590,16 @@ li{
     header{
         height: 85vh;
     }
+       
 }
 
 @media (min-width: 1024px) {
+
+    
+    .header-contacto{
+        width: 100vw;
+        height: 72px;
+    }
 
     .nav__label{
         display: none;
@@ -507,9 +609,15 @@ li{
         width: 100%;
     }
 
+    .nav__container{
+        display: flex;
+        justify-content: center;
+    }
+
     .nav-lista{
         position: relative;
         display: flex;
+        justify-content: space-evenly;
         top: 0;
         border: 0;
     }
@@ -517,7 +625,6 @@ li{
     .nav-links{
         display: flex;
         flex-direction: row;
-        gap: 30px;
     }
 
     .tarjetas-container{
@@ -553,7 +660,7 @@ li{
     }
 
 
-
+    
 }
 
 @media (min-width: 1200px) {
@@ -562,6 +669,11 @@ li{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+    }
+
+    .nav__container{
+        display: flex;
+        justify-content: end;
     }
 
     .banner{
