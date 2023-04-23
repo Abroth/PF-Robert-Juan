@@ -1,746 +1,351 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-
-    /* border: 3px solid red; */
-}
-
-
-body{
-    font-family: 'Rubik', sans-serif;
-}
-
-
-/* ===============HEADER=============== */
-
-/* -------Header Prinicpal------- */
-header{
-    width: 100vw;
-    height: 35vh;
-}
-
-.header-contacto{
-    width: 100vw;
-    height: 72px;
-}
-
-.header-index{
-    background-image: url(../img/EdificioPortada.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.h1-inicio{
-    width: 110px;
-    height: 70px;
-}
-
-.logo-nav{
-    height: 100%;
-    width: 100%;
-}
-
-
-
-/* -------Header Nosotros------- */
-.header-nosotros{
-    background-image: url(../img/img-Arquitectura1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* -------Header proyectos------- */
-.header-proyectos{
-    background-image: url(../img/img-Arquitectura2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* -------Header proyectos------- */
-.header-servicios{
-    background-image: url(../img/img-Arquitectura3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* -------Header proyectos------- */
-/* .header-contacto{
-    background-image: url(../img/img-Arquitectura4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-.header-container{
-    background-color: white;
-    max-height: 7vh;
-    min-height: 70px;
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-    position: fixed;
-    
-    border-bottom: 2px solid black;
-}
-
-
-
-/* ---------NavBar----------- */
-
-
-
-.nav__container{
-    display: flex;
-    height: 100%;
-    width: 100vw;
-    justify-content: end;
-}
-
-.nav__label{
-    display: block;
-    cursor: pointer;
-}
-
-.nav__input{
-    display: none;
-}
-
-.nav-lista{
-    display: none;
-    position: fixed;
-    top: 71px;
-    bottom: 0;
-    background: white;
-    width: 30%;
-    right: 0;
-    border-left: 2px solid black;
-}
-
-.nav__input:checked + .nav-lista{
-
-    display: flex;
-    justify-content: start;
-} 
-
-.nav-links{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 3vh;
-}
-
-
-
-/* =========================INDEX=========================== */
-
-/* ------------TITULO------------ */
-
-.contenido-index{
-    padding: 50px 0 70px 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 6fr;
-
-    justify-items: center;
-    align-items: center;
-
-    row-gap: 5vh;
-}
-.section-titulo{
-    min-width: 290px;
-    padding: 5vh 5vw;
-    display: flex;
-    flex-direction: column;
-    gap: 5vw;
-}
-
-.article-titulo{
-    min-width: 290px;
-    display: flex;
-    flex-direction: column;
-    gap: 2.5vh;
-}
-
-.header-titulo{
-    font-size: 3rem;
-}
-
-.article-titulo{
-    font-size: 1.2rem;
-}
-
-.tarjetas-container{
-    display: flex;
-    flex-direction: column;
-    gap: 10vh;
-}
-
-
-
-.info__tarjeta{
-    max-width: 390px;
-    min-height: 684px;
-    max-height: 65vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-.info__tarjeta__titulo{
-    width: 100%;
-    max-height: 65vh;
-}
-
-.info__tarjeta__img{
-    max-width: 376px;
-    min-width: 100%;
-    max-height: 100%;
-    min-height: 500px;
-}
-
-
-/* ===========Footer============== */
-
-footer{
-    background-color: #333e51;
-    /* margin-top: 20px; */
-    height: auto;
-
-    border-top: 2px solid black;
-}
-
-
-.footer-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
-    grid-template-areas: 
-    "logo-lista"
-    "informacion"
-    "redes"
-    ;
-    justify-items: center;
-    align-items: center;
-    
-    row-gap: 2vh;
-}
-
-
-.footer__link{
-    padding: 7px;
-    color: #eeeeee;
-    border-radius: 10px;
-}
-
-.footer__link:hover{
-    background-color: #eeeeee;
-    color: #333e51;
-}
-
-/* ----------logo y nav--------- */
-
-.logo-lista-footer{
-    grid-area: logo-lista;
-}
-
-.logo-footernav{
-    display: flex;
-    flex-direction: column;
-    
-    justify-items: center;
-    align-items: center;
-
-    gap: 1vh;
-}
-
-
-.footer-lista{
-    display: flex;
-    flex-direction: column;
-}
-.footer-img-logo{
-    width: 100%;
-    max-width: 400px;
-    height: 23%;
-
-}
-
-.enlance-home-footer,
-.enlance-nosotros-footer,
-.enlance-proyectos-footer,
-.enlance-contacto-footer,
-.enlance-servicios-footer {
-    color: white;
-}
-
-/* ----------Informacion-------------- */
-
-.informacion-footer{
-    padding: 5vh 5vw;
-    grid-area: informacion;
-    
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.titulos-informacion-footer{
-    color: white;
-    font-size: 12px;
-}
-
-/* -----------Redes Sociales----------- */
-
-.infomacion-redes-empresa{
-    grid-area: redes;
-    padding: 5vh 5vw;
-
-    max-width: 400px;
-
-    
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    justify-items: center;
-    align-items: center;
-}
-
-.footer-lista{
-    display: flex;
-    gap: 10px;
-}
-
-.info-empresa{
-    color: white;
-    font-size: 12px;
-}
-
-.acerca-empresa{
-    color: white;
-    font-size: 17px;
-}
-
-.redes{
-    color: white;
-}
-
-
-
-/* ==============Multimedia y Enlaces=========== */
-
-/* -------------Enlaces------------- */
-a{
-    text-decoration: none;
-}
-
-
-
-a:hover{
-    background-color: #333e51;
-    color: #eeeeee;
-}
-
-li{
-    display: flex;
-}
-
-.nav__link{
-    padding: 6px 10px;
-    border-radius: 12px;
-}
-
-
-/* ============================PAGINA NOSOTROS============================ */
-
-/* -------------Tarjetas------------- */
-
-.tarjetas-nosotros{
-
-    /* min-height: 500px; */
-    /* max-height: 100%; */
-    padding: 50px 0;
-    display: grid;
-    padding-bottom: 70px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "tarjeta1"
-    "tarjeta2"
-    "tarjeta3"
-    ;
-    justify-items: center;
-    align-items: center;
-
-    gap: 65px;
-
-    background-color: #333e51;
-    
-}
-
-.tarjeta1-nosotros{
-    max-width: 390px;
-    /* height: 25vh; */
-    grid-area: tarjeta1;
-    color: #eeeeee;
-
-}
-
-.tarjeta2-nosotros{
-    max-width: 390px;
-    /* height: 25vh; */
-    grid-area: tarjeta2;
-    color: #eeeeee;
-}
-
-.tarjeta3-nosotros{
-    max-width: 390px;
-    /* height: 25vh; */
-    grid-area: tarjeta3;
-    color: #eeeeee;
-}
-
-.parrafos-nosotros{
-    padding: 2.5vh 5vw;
-}
-
-.img-tarjeta1, .img-tarjeta2, .img-tarjeta3
-{
-    width: 100%;
-}
-
-
-/* ==========================PAGINA PROYECTOS=============================== */
-
-.primera-fila{
-    display: flex;
-    justify-content: space-around;
-    padding:35px 0px;
-}
-
-.img-primera-fila{
-    height: 30vh;
-    width: 23vw;
-}
-
-.proyectos-imagines{
-    height: 100%;
-    width: 100%;
-}
-
-/* ==========================Informacion================================= */
-
-.informacion{
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-}
-
-.informacion-imagenes{
-    width: 60vh;
-    height: 30vh;
-}
-
-.img-informacion{
-    height: 100%;
-    width: 100%;
-}
-
-.informacion-section{
-    padding: 0 10px 30px 10px;
-
-    width: 100vw;
-    max-width: 60vh;
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
-}
-
-.informacion-titulo{
-    font-size: 2rem;
-}
-
-.informacion-text{
-    font-size: 1.5rem;
-}
-
-
-/* ===================================Contacto========================================= */
-.box__container{
-    position:relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    padding: 10px 5px;
-}
-
-.box__container:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: url(../img/img-Arquitectura4.jpg) no-repeat center;
-    background-size: cover;
-    z-index: -1;
-
-}
-
-.contact-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #d1d1d1c5;
-    width: 1200px;
-    padding: 10vh 5vw;
-    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
-
-}
-
-.contact-title{
-    position: relative;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    font-size: 2.5rem;
-}
-
-.field{
-    width: 100%;
-    padding: 1rem 2rem;
-    outline: none;
-    border: 2px solid rgba(0, 0, 0, 0);
-    background-color: rgba(230, 230, 230, 0.733);
-    font-size: 1.5rem;
-    margin-bottom: 22px;
-    transition:  .3s;
-}
-
-.field:hover{
-    background-color:#fff;
-    color:#333e51;
-}
-
-.field:focus{
-    background-color: #fff;
-    border: 2px solid rgba(30, 85, 250, 0.47);
-    color: #333e51;
-}
-
-.area{
-    min-height: 150px;
-}
-
-.btn{
-    width: 100%;
-    padding: 1rem 1rem;
-    font-size: 1.5rem;
-    background-color: #333e51;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    color: #fff;
-    transition: .3s;
-}
-
-.btn:hover{
-    background-color: #212833;
-    color: #e4e4e4;
-}     
-
-
-
-
-/* ========================================Responsive======================================= */
-
-
-@media (min-width: 600px) {
-    
-    /* -----header----- */
-    header{
-        height: 50vh;
-    }
-
-    .footer-lista{
-        flex-direction: row;
-    }
-
-    .informacion-imagenes{
-        width: 60vh;
-        height: 40vh;
-    }
-
-    
-   
-}
-
-@media (min-width: 768px) {
-    header{
-        height: 85vh;
-    }
-       
-}
-
-@media (min-width: 1024px) {
-
-    
-    .header-contacto{
-        width: 100vw;
-        height: 72px;
-    }
-
-    .nav__label{
-        display: none;
-    }
-
-    .nav-bar{
-        width: 100%;
-    }
-
-    .nav__container{
-        display: flex;
-        justify-content: center;
-    }
-
-    .nav-lista{
-        position: relative;
-        display: flex;
-        justify-content: space-evenly;
-        top: 0;
-        border: 0;
-    }
-
-    .nav-links{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .tarjetas-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-
-    }
-
-    .footer-img-logo{
-        max-width: 250px;
-    }
-
-    .footer-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "logo info acerca"
-        ;
-    }
-
-    .logo-lista-footer{
-        grid-area: logo;
-    }
-
-    .informacion-footer{
-        grid-area: info;
-    }
-
-    .infomacion-redes-empresa{
-        grid-area: acerca;
-    }
-
-
-    
-}
-
-@media (min-width: 1200px) {
-
-    .tarjetas-nosotros{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .nav__container{
-        display: flex;
-        justify-content: end;
-    }
-
-    .banner{
-    width: 100%;
-    height: 200px;
-    background-image: url("../img/nyc.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    }
-
-}
-
-
-@media (min-width: 1500px) {
-    header{
-        height: 100vh;
-    }
-
-    .tarjetas-container{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .infomacion-redes-empresa{
-        max-width: 80%;
-    }
-
-
-    .section-titulo{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        align-items: center;
-        padding-top: 5vh;
-    }
-
-    .header-titulo{
-        font-size: 3.5rem;
-    }
-
-    /* ================NOSOTROS================== */
-
-    .banner{
-        width: 100%;
-        height: 200px;
-        background-image: url("../img/nyc.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .informacion{
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding: 50px 0;
-        
-    }
-
-    .informacion-titulo{
-        font-size: 2rem;
-    }
-    
-    .informacion-text{
-        font-size: 1.7rem;
-    }
-    
-}
-
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.tarjetas-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+}
+
+.tarjeta {
+  max-width: 390px;
+  min-height: 684px;
+  max-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tarjeta__titulo__img {
+  width: 100%;
+  max-height: 65vh;
+}
+.tarjeta__imagen {
+  max-width: 376px;
+  min-width: 100%;
+  max-height: 100%;
+  min-height: 500px;
+}
+
+.contenido-index {
+  padding: 50px 0 70px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6fr;
+  justify-items: center;
+  align-items: center;
+  row-gap: 5vh;
+}
+
+.titulo__container {
+  min-width: 290px;
+  padding: 5vh 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+.titulo__container__head {
+  font-size: 3rem;
+}
+.titulo__container__info {
+  min-width: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  font-size: 1.2rem;
+}
+
+header {
+  width: 100vw;
+  height: 35vh;
+}
+
+.header__container {
+  background-color: white;
+  max-height: 7vh;
+  min-height: 70px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  border-bottom: 2px solid black;
+}
+.header__container .header__inicio {
+  width: 110px;
+  height: 70px;
+}
+.header__container .header__logo__img {
+  height: 90%;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  height: 100%;
+  width: 100vw;
+  justify-content: end;
+}
+.navbar__label {
+  padding-right: 20px;
+  display: block;
+  cursor: pointer;
+}
+.navbar__input {
+  display: none;
+}
+.navbar__lista {
+  display: none;
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  background-color: rgb(232, 232, 232);
+  width: 100%;
+  right: 0;
+  border-left: 2px solid #333e51;
+}
+.navbar .navbar__input:checked + .navbar__lista {
+  display: flex;
+  justify-content: center;
+}
+.navbar .navbar__lista__links {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 3vh;
+  color: black;
+  width: 100vw;
+}
+.navbar .nav__link {
+  background: #eeeeee;
+  height: 10vh;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2rem;
+  width: 100vw;
+  border: 1px solid black;
+}
+
+footer {
+  background-color: #333e51;
+  height: auto;
+  padding-top: 50px;
+  border-top: 2px solid black;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  grid-template-areas: "logo-lista" "informacion" "redes";
+  justify-items: center;
+  align-items: center;
+  row-gap: 2vh;
+}
+.footer-container .footer__nav {
+  grid-area: logo-lista;
+}
+.footer-container .footer__nav .footer__logo {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 1vh;
+}
+.footer-container .footer__nav .footer__logo__img {
+  width: 100%;
+  max-width: 400px;
+  height: 23%;
+}
+.footer-container .footer__nav .footer__lista {
+  font-size: 1.5rem;
+  padding: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.footer-container .footer__nav .footer__link {
+  text-decoration: none;
+  color: white;
+}
+.footer-container .footer__informacion {
+  padding: 5vh 5vw;
+  grid-area: informacion;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+}
+.footer-container .footer__informacion .informacion__datos {
+  color: white;
+  font-size: 12px;
+}
+.footer-container .footer__empresa {
+  grid-area: redes;
+  padding: 5vh 5vw;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  color: white;
+}
+.footer-container .footer__empresa .footer__redes__lista {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.footer-container .footer__empresa .footer__empresa__info {
+  font-size: 1rem;
+}
+.footer-container .footer__empresa .footer__empresa__titulo {
+  font-size: 1.6rem;
+}
+
+.informacion {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.informacion__imagenes {
+  width: 60vh;
+  height: 30vh;
+}
+.informacion__imagenes .informacion__img {
+  height: 100%;
+  width: 100%;
+}
+.informacion__section {
+  padding: 0 10px 30px 10px;
+  width: 100vw;
+  max-width: 60vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.informacion__section .informacion__titulo {
+  font-size: 2rem;
+}
+.informacion__section .informacion__text {
+  font-size: 1.5rem;
+}
+
+.tarjetas-nosotros-container {
+  padding: 50px 0;
+  display: grid;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+  background-color: #333e51;
+}
+.tarjetas-nosotros-container .tarjetas__informacion {
+  max-width: 390px;
+  /* height: 25vh; */
+  grid-area: tarjeta1;
+  color: #eeeeee;
+}
+.tarjetas-nosotros-container .tarjetas__informacion__img {
+  width: 100%;
+}
+
+.proyectos {
+  background-color: white;
+  border: 1px solid #333e51;
+}
+.proyectos__text {
+  color: #333e51;
+}
+
+.titulo__container {
+  padding: 30px 60px;
+}
+.titulo__container .titulo__head {
+  font-size: 2rem;
+}
+.titulo__container .titulo__inicial {
+  font-size: 1.5rem;
+}
+.titulo__container .titulo__text {
+  padding-top: 15px;
+  display: block;
+  font-size: 1.2rem;
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/nyc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.clientes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clientes__texto {
+  padding: 50px;
+  font-size: 2rem;
+}
+.clientes__logo {
+  width: 350px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+}
+.clientes__img {
+  padding: 15px;
+  width: 80%;
+  border: 1px solid #333e51;
+}
+
+.header-index {
+  background-image: url(../../img/EdificioPortada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-index {
+  background-image: url(../../img/img-Arquitectura1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-index {
+  background-image: url(../../img/img-Arquitectura2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-index {
+  background-image: url(../../img/img-Arquitectura3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */

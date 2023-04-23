@@ -1,0 +1,58 @@
+.tarjetas-nosotros-container{
+
+    padding: 50px 0;
+    display: grid;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+
+    background-color: $color-primario;
+
+    .tarjetas__informacion{
+        max-width: 390px;
+        /* height: 25vh; */
+        grid-area: tarjeta1;
+        color: $color-securndario;
+    
+        &__img{
+            width: 100%;
+        }
+    }
+}
+
+.proyectos{
+    background-color: white;
+    border: 1px solid $color-primario;
+
+    &__text{
+        color: $color-primario;
+    }
+}
+
+.titulo__container{
+    padding: 30px 60px;
+
+    .titulo__head{
+        font-size: 2rem;
+    }
+
+    .titulo__inicial{
+        font-size: 1.5rem;
+    }
+
+    .titulo__text{
+        padding-top: 15px;
+        display: block;
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+
+
+
+

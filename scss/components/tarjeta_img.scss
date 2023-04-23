@@ -1,0 +1,30 @@
+.clientes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__texto{
+        padding: 50px;
+        font-size: 2rem;
+    }
+
+    &__logo{
+        width: 350px;
+        padding-bottom: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    &__img{     
+        padding: 15px;
+        width: 80%;
+        border: 1px solid $color-primario;
+    }
+
+    
+}
+
+

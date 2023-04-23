@@ -1,0 +1,26 @@
+.tarjetas-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.tarjeta{
+    max-width: 390px;
+    min-height: 684px;
+    max-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__titulo__img{
+        width: 100%;
+        max-height: 65vh;
+    }
+
+    &__imagen{
+        max-width: 376px;
+        min-width: 100%;
+        max-height: 100%;
+        min-height: 500px;
+    }
+}
