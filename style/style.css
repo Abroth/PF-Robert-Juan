@@ -9,11 +9,6 @@ li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
 .tarjetas-container {
   display: flex;
   flex-direction: column;
@@ -72,12 +67,6 @@ header {
   height: 35vh;
 }
 
-.header-index {
-  background-image: url(../img/EdificioPortada.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .header__container {
   background-color: white;
   max-height: 7vh;
@@ -89,14 +78,12 @@ header {
   position: fixed;
   border-bottom: 2px solid black;
 }
-
-.header__inicio {
+.header__container .header__inicio {
   width: 110px;
   height: 70px;
 }
-
-.header__logo__img {
-  height: 100%;
+.header__container .header__logo__img {
+  height: 90%;
   width: 100%;
 }
 
@@ -106,43 +93,55 @@ header {
   width: 100vw;
   justify-content: end;
 }
-
 .navbar__label {
+  padding-right: 20px;
   display: block;
   cursor: pointer;
 }
-
 .navbar__input {
   display: none;
 }
-
 .navbar__lista {
   display: none;
   position: fixed;
-  top: 71px;
+  top: 60px;
   bottom: 0;
-  background: white;
-  width: 30%;
+  background-color: rgb(232, 232, 232);
+  width: 100%;
   right: 0;
-  border-left: 2px solid black;
+  border-left: 2px solid #333e51;
 }
-
-.nav__input:checked + .nav-lista {
+.navbar .navbar__input:checked + .navbar__lista {
   display: flex;
-  justify-content: start;
+  justify-content: center;
 }
-
-.navbar__lista__links {
+.navbar .navbar__lista__links {
   display: flex;
+  padding: 20px;
   flex-direction: column;
   justify-content: start;
-  align-items: start;
+  align-items: center;
   gap: 3vh;
+  color: black;
+  width: 100vw;
+}
+.navbar .nav__link {
+  background: #eeeeee;
+  height: 10vh;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2rem;
+  width: 100vw;
+  border: 1px solid black;
 }
 
 footer {
   background-color: #333e51;
   height: auto;
+  padding-top: 50px;
   border-top: 2px solid black;
 }
 
@@ -171,8 +170,16 @@ footer {
   height: 23%;
 }
 .footer-container .footer__nav .footer__lista {
+  font-size: 1.5rem;
+  padding: 20px 0 0 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.footer-container .footer__nav .footer__link {
+  text-decoration: none;
+  color: white;
 }
 .footer-container .footer__informacion {
   padding: 5vh 5vw;
@@ -190,7 +197,7 @@ footer {
 .footer-container .footer__empresa {
   grid-area: redes;
   padding: 5vh 5vw;
-  max-width: 400px;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -204,10 +211,10 @@ footer {
   flex-direction: column;
 }
 .footer-container .footer__empresa .footer__empresa__info {
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 .footer-container .footer__empresa .footer__empresa__titulo {
-  font-size: 17px;
+  font-size: 1.6rem;
 }
 
 .informacion {
@@ -233,12 +240,11 @@ footer {
   flex-direction: column;
   gap: 2vh;
 }
+.informacion__section .informacion__titulo {
+  font-size: 2rem;
+}
 .informacion__section .informacion__text {
   font-size: 1.5rem;
-}
-
-.informacion__titulo {
-  font-size: 2rem;
 }
 
 .tarjetas-nosotros-container {
@@ -262,6 +268,29 @@ footer {
   width: 100%;
 }
 
+.proyectos {
+  background-color: white;
+  border: 1px solid #333e51;
+}
+.proyectos__text {
+  color: #333e51;
+}
+
+.titulo__container {
+  padding: 30px 60px;
+}
+.titulo__container .titulo__head {
+  font-size: 2rem;
+}
+.titulo__container .titulo__inicial {
+  font-size: 1.5rem;
+}
+.titulo__container .titulo__text {
+  padding-top: 15px;
+  display: block;
+  font-size: 1.2rem;
+}
+
 .banner {
   width: 100%;
   height: 200px;
@@ -269,6 +298,54 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.clientes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clientes__texto {
+  padding: 50px;
+  font-size: 2rem;
+}
+.clientes__logo {
+  width: 350px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+}
+.clientes__img {
+  padding: 15px;
+  width: 80%;
+  border: 1px solid #333e51;
+}
+
+.header-index {
+  background-image: url(../../img/EdificioPortada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-index {
+  background-image: url(../../img/img-Arquitectura1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-index {
+  background-image: url(../../img/img-Arquitectura2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-index {
+  background-image: url(../../img/img-Arquitectura3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

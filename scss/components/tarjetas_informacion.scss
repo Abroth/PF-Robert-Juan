@@ -23,6 +23,36 @@
     }
 }
 
+.proyectos{
+    background-color: white;
+    border: 1px solid $color-primario;
+
+    &__text{
+        color: $color-primario;
+    }
+}
+
+.titulo__container{
+    padding: 30px 60px;
+
+    .titulo__head{
+        font-size: 2rem;
+    }
+
+    .titulo__inicial{
+        font-size: 1.5rem;
+    }
+
+    .titulo__text{
+        padding-top: 15px;
+        display: block;
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+
 
 
 

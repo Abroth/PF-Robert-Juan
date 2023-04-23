@@ -24,13 +24,16 @@
         flex-direction: column;
         gap: 2vh;
 
+        .informacion__titulo{
+            font-size: 2rem;
+        }
+
         .informacion__text{
             font-size: 1.5rem;
         }
+
     }
 }
 
-.informacion__titulo{
-    font-size: 2rem;
-}
+
 
