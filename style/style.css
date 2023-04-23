@@ -210,4 +210,65 @@ footer {
   font-size: 17px;
 }
 
+.informacion {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.informacion__imagenes {
+  width: 60vh;
+  height: 30vh;
+}
+.informacion__imagenes .informacion__img {
+  height: 100%;
+  width: 100%;
+}
+.informacion__section {
+  padding: 0 10px 30px 10px;
+  width: 100vw;
+  max-width: 60vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.informacion__section .informacion__text {
+  font-size: 1.5rem;
+}
+
+.informacion__titulo {
+  font-size: 2rem;
+}
+
+.tarjetas-nosotros-container {
+  padding: 50px 0;
+  display: grid;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+  background-color: #333e51;
+}
+.tarjetas-nosotros-container .tarjetas__informacion {
+  max-width: 390px;
+  /* height: 25vh; */
+  grid-area: tarjeta1;
+  color: #eeeeee;
+}
+.tarjetas-nosotros-container .tarjetas__informacion__img {
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/nyc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /*# sourceMappingURL=style.css.map */
