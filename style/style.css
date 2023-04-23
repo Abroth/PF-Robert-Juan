@@ -2,7 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 3px solid red; */
+  font-family: "Rubik", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .tarjetas-container {
@@ -129,6 +138,76 @@ header {
   justify-content: start;
   align-items: start;
   gap: 3vh;
+}
+
+footer {
+  background-color: #333e51;
+  height: auto;
+  border-top: 2px solid black;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  grid-template-areas: "logo-lista" "informacion" "redes";
+  justify-items: center;
+  align-items: center;
+  row-gap: 2vh;
+}
+.footer-container .footer__nav {
+  grid-area: logo-lista;
+}
+.footer-container .footer__nav .footer__logo {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 1vh;
+}
+.footer-container .footer__nav .footer__logo__img {
+  width: 100%;
+  max-width: 400px;
+  height: 23%;
+}
+.footer-container .footer__nav .footer__lista {
+  display: flex;
+  flex-direction: column;
+}
+.footer-container .footer__informacion {
+  padding: 5vh 5vw;
+  grid-area: informacion;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+}
+.footer-container .footer__informacion .informacion__datos {
+  color: white;
+  font-size: 12px;
+}
+.footer-container .footer__empresa {
+  grid-area: redes;
+  padding: 5vh 5vw;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  color: white;
+}
+.footer-container .footer__empresa .footer__redes__lista {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.footer-container .footer__empresa .footer__empresa__info {
+  font-size: 0.7rem;
+}
+.footer-container .footer__empresa .footer__empresa__titulo {
+  font-size: 17px;
 }
 
 /*# sourceMappingURL=style.css.map */

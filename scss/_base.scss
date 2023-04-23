@@ -3,7 +3,18 @@
     padding: 0;
     box-sizing:border-box;
 
-    /* border: 3px solid red; */
+    font-family: 'Rubik', sans-serif;
+    // border: 3px solid red; 
 }
 
 $color-primario: #333e51;
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
