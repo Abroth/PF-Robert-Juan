@@ -106,36 +106,28 @@ header {
   position: fixed;
   top: 60px;
   bottom: 0;
-  background-color: rgb(232, 232, 232);
+  background-color: white;
   width: 100%;
+  height: 25vh;
   right: 0;
-  border-left: 2px solid #333e51;
+  border-bottom: 2px solid #333e51;
 }
 .navbar .navbar__input:checked + .navbar__lista {
   display: flex;
   justify-content: center;
 }
 .navbar .navbar__lista__links {
-  display: flex;
   padding: 20px;
+  gap: 20px;
+  display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  gap: 3vh;
   color: black;
   width: 100vw;
 }
 .navbar .nav__link {
-  background: #eeeeee;
-  height: 10vh;
   display: block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-decoration: none;
-  font-size: 2rem;
-  width: 100vw;
-  border: 1px solid black;
+  font-size: 1rem;
 }
 
 footer {
