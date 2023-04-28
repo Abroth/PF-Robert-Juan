@@ -16,7 +16,7 @@ li {
 }
 .tarjetas-container .tarjeta {
   max-width: 390px;
-  min-height: 684px;
+  min-height: 700px;
   max-height: 65vh;
   display: flex;
   flex-direction: column;
@@ -35,6 +35,10 @@ li {
 @media (min-width: 1200px) {
   .tarjetas-container {
     flex-direction: row;
+  }
+  .tarjetas-container .tarjeta:hover {
+    transform: scale(1.01);
+    box-shadow: -1px 1px 15px 2px;
   }
 }
 
