@@ -122,6 +122,9 @@ footer{
                 .footer__lista{
                     display: flex;
                     flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    
                 }
             }
 
@@ -134,6 +137,8 @@ footer{
                     &__lista{
                         display: flex;
                         flex-direction: row;
+                        justify-content: space-evenly;
+                        width: 450px;
                     }
                 }
             }

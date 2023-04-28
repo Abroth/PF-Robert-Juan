@@ -75,10 +75,9 @@ li {
 
 header {
   width: 100vw;
-  min-height: 300px;
+  height: 300px;
 }
-
-.header__container {
+header .header__container {
   background-color: white;
   max-height: 7vh;
   min-height: 70px;
@@ -89,30 +88,29 @@ header {
   position: fixed;
   border-bottom: 2px solid black;
 }
-.header__container .header__inicio {
+header .header__container .header__inicio {
   width: 110px;
   height: 70px;
 }
-.header__container .header__logo__img {
+header .header__container .header__inicio .header__logo__img {
   height: 90%;
   width: 100%;
 }
-
-.navbar {
+header .header__container .navbar {
   display: flex;
   height: 100%;
   width: 100vw;
   justify-content: end;
 }
-.navbar__label {
+header .header__container .navbar__label {
   padding-right: 20px;
   display: block;
   cursor: pointer;
 }
-.navbar__input {
+header .header__container .navbar__input {
   display: none;
 }
-.navbar__lista {
+header .header__container .navbar__lista {
   display: none;
   position: fixed;
   top: 60px;
@@ -123,11 +121,7 @@ header {
   right: 0;
   border-bottom: 2px solid #333e51;
 }
-.navbar .navbar__input:checked + .navbar__lista {
-  display: flex;
-  justify-content: center;
-}
-.navbar .navbar__lista__links {
+header .header__container .navbar__lista .navbar__lista__links {
   padding: 20px;
   gap: 20px;
   display: flex;
@@ -135,23 +129,30 @@ header {
   color: black;
   width: 100vw;
 }
-.navbar .nav__link {
+header .header__container .navbar__lista .navbar__lista__links .nav__link {
   display: block;
   text-decoration: none;
   font-size: 1rem;
 }
+header .header__container .navbar .navbar__input:checked + .navbar__lista {
+  display: flex;
+  justify-content: center;
+}
 @media (min-width: 1200px) {
-  .navbar .navbar__label {
+  header {
+    height: 100vh;
+  }
+  header .header__container .navbar__label {
     display: none;
   }
-  .navbar .navbar__lista {
+  header .header__container .navbar__lista {
     display: flex;
     width: 50vw;
     top: 0;
     position: absolute;
     border: none;
   }
-  .navbar .navbar__lista__links {
+  header .header__container .navbar__lista .navbar__lista__links {
     flex-direction: row;
     width: 50vw;
     justify-content: end;
@@ -249,6 +250,8 @@ footer .footer-container .footer__empresa .footer__empresa__titulo {
   footer .footer-container .footer__nav .footer__lista {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   footer .footer-container .footer__empresa__descrip {
     width: 450px;
@@ -256,6 +259,8 @@ footer .footer-container .footer__empresa .footer__empresa__titulo {
   footer .footer-container .footer__empresa .footer__redes__lista {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 450px;
   }
 }
 
