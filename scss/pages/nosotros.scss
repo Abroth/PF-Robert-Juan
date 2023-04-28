@@ -10,7 +10,8 @@
     font-size: 1rem;
     padding-right: 50px;
     .portada__titulo{
-        color: $color-primario;
+        text-shadow: $text-shadows;
+        color: $color-securndario;
         animation-name: entrada-portada-right;
         animation-duration: 2s;
     }

@@ -10,7 +10,8 @@
     padding-left: 50px;
     padding-bottom: 200px;
     .portada__titulo{
-        color: $color-primario;
+        text-shadow: $text-shadows;
+        color: $color-securndario;
         animation-name: entrada-portada-left;
         animation-duration: 2s;
     }

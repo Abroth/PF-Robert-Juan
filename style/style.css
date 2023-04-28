@@ -54,7 +54,7 @@ li {
   }
   .tarjetas-container .tarjeta:hover {
     transform: scale(1.01);
-    box-shadow: -1px 1px 15px 2px;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
   }
 }
 
@@ -384,6 +384,66 @@ footer .footer-container .footer__empresa .footer__empresa__titulo {
   border: 1px solid #333e51;
 }
 
+.box__container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.box__container .contact-box {
+  padding: 20px;
+  width: 50vw;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+.box__container .contact-box .contact-title {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+.box__container .contact-box .field {
+  width: 100%;
+  padding: 1rem 2rem;
+  outline: none;
+  font-size: 1.5rem;
+  border: 2px solid black;
+  margin-bottom: 22px;
+  background-color: rgba(230, 230, 230, 0.733);
+}
+.box__container .contact-box .area {
+  min-height: 150px;
+}
+.box__container .field:hover {
+  background-color: #fff;
+  color: #333e51;
+}
+.box__container .field:focus {
+  background-color: #fff;
+  border: 2px solid rgba(30, 85, 250, 0.47);
+  color: #333e51;
+}
+
+.btn {
+  width: 100%;
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+  background-color: #333e51;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #212833;
+  color: #e4e4e4;
+}
+
 .portada__index {
   height: 50vh;
   min-height: 400px;
@@ -397,7 +457,8 @@ footer .footer-container .footer__empresa .footer__empresa__titulo {
   padding-bottom: 200px;
 }
 .portada__index .portada__titulo {
-  color: #333e51;
+  text-shadow: 1px 1px 3px black;
+  color: #eeeeee;
   animation-name: entrada-portada-left;
   animation-duration: 2s;
 }
@@ -423,7 +484,8 @@ footer .footer-container .footer__empresa .footer__empresa__titulo {
   padding-bottom: 100px;
 }
 .portada__contacto .portada__titulo {
-  color: #333e51;
+  text-shadow: 1px 1px 3px black;
+  color: #eeeeee;
   animation-name: entrada-portada-left;
   animation-duration: 2s;
 }
@@ -449,7 +511,8 @@ footer .footer-container .footer__empresa .footer__empresa__titulo {
   padding-right: 50px;
 }
 .portada__nosotros .portada__titulo {
-  color: #333e51;
+  text-shadow: 1px 1px 3px black;
+  color: #eeeeee;
   animation-name: entrada-portada-right;
   animation-duration: 2s;
 }
@@ -474,7 +537,8 @@ footer .footer-container .footer__empresa .footer__empresa__titulo {
   padding-left: 35px;
 }
 .portada__proyectos .portada__titulo {
-  color: #333e51;
+  text-shadow: 1px 1px 3px black;
+  color: #eeeeee;
   animation-name: entrada-portada-left;
   animation-duration: 2s;
 }
@@ -501,7 +565,8 @@ footer .footer-container .footer__empresa .footer__empresa__titulo {
   padding-bottom: 100px;
 }
 .portada__servicios .portada__titulo {
-  color: #333e51;
+  text-shadow: 1px 1px 3px black;
+  color: #eeeeee;
   animation-name: entrada-portada-right;
   animation-duration: 2s;
 }
