@@ -6,24 +6,37 @@
     justify-items: center;
     align-items: center;
     row-gap: 5vh;
-}
 
-.titulo__container{
-    min-width: 290px;
-    padding: 5vh 5vw;
-    display: flex;
-    flex-direction: column;
-    gap: 5vw;
-
-    &__head{
-        font-size: 3rem;
-    }
-
-    &__info{
+    .titulo__container{
         min-width: 290px;
+        padding: 5vh 5vw;
         display: flex;
         flex-direction: column;
-        gap: 2.5vh;
-        font-size: 1.2rem;
+        gap: 5vw;
+    
+        .titulo__head{
+            font-size: 3rem;
+        }
+    
+        .titulo__info{
+            min-width: 290px;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5vh;
+            font-size: 1.2rem;
+        }
+    }
+
+    @include desktop{
+        .titulo__container{
+            flex-direction: row;
+            justify-content: center;
+            gap: 20vw;
+            align-items: center;
+        }
+
+
     }
 }
+
+

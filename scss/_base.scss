@@ -10,6 +10,14 @@
 $color-primario: #333e51;
 $color-securndario: #eeeeee;
 
+@mixin desktop{
+    @media (min-width: 1200px){
+        @content;
+    }
+}
+
+
+
 li{
     list-style: none;
 }

@@ -14,8 +14,7 @@ li {
   flex-direction: column;
   gap: 10vh;
 }
-
-.tarjeta {
+.tarjetas-container .tarjeta {
   max-width: 390px;
   min-height: 684px;
   max-height: 65vh;
@@ -23,15 +22,20 @@ li {
   flex-direction: column;
   justify-content: space-between;
 }
-.tarjeta__titulo__img {
+.tarjetas-container .tarjeta__titulo__img {
   width: 100%;
   max-height: 65vh;
 }
-.tarjeta__imagen {
+.tarjetas-container .tarjeta__imagen {
   max-width: 376px;
   min-width: 100%;
   max-height: 100%;
   min-height: 500px;
+}
+@media (min-width: 1200px) {
+  .tarjetas-container {
+    flex-direction: row;
+  }
 }
 
 .contenido-index {
@@ -43,23 +47,30 @@ li {
   align-items: center;
   row-gap: 5vh;
 }
-
-.titulo__container {
+.contenido-index .titulo__container {
   min-width: 290px;
   padding: 5vh 5vw;
   display: flex;
   flex-direction: column;
   gap: 5vw;
 }
-.titulo__container__head {
+.contenido-index .titulo__container .titulo__head {
   font-size: 3rem;
 }
-.titulo__container__info {
+.contenido-index .titulo__container .titulo__info {
   min-width: 290px;
   display: flex;
   flex-direction: column;
   gap: 2.5vh;
   font-size: 1.2rem;
+}
+@media (min-width: 1200px) {
+  .contenido-index .titulo__container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20vw;
+    align-items: center;
+  }
 }
 
 header {
@@ -129,6 +140,26 @@ header {
   text-decoration: none;
   font-size: 1rem;
 }
+@media (min-width: 1200px) {
+  .navbar .navbar__label {
+    display: none;
+  }
+  .navbar .navbar__lista {
+    display: flex;
+    width: 50vw;
+    top: 0;
+    position: absolute;
+    border: none;
+  }
+  .navbar .navbar__lista__links {
+    flex-direction: row;
+    width: 50vw;
+    justify-content: end;
+    align-items: center;
+    gap: 70px;
+    padding-right: 40px;
+  }
+}
 
 footer {
   background-color: #333e51;
@@ -136,8 +167,7 @@ footer {
   padding-top: 50px;
   border-top: 2px solid black;
 }
-
-.footer-container {
+footer .footer-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 3fr;
@@ -146,22 +176,22 @@ footer {
   align-items: center;
   row-gap: 2vh;
 }
-.footer-container .footer__nav {
+footer .footer-container .footer__nav {
   grid-area: logo-lista;
 }
-.footer-container .footer__nav .footer__logo {
+footer .footer-container .footer__nav .footer__logo {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
   gap: 1vh;
 }
-.footer-container .footer__nav .footer__logo__img {
+footer .footer-container .footer__nav .footer__logo__img {
   width: 100%;
   max-width: 400px;
   height: 23%;
 }
-.footer-container .footer__nav .footer__lista {
+footer .footer-container .footer__nav .footer__lista {
   font-size: 1.5rem;
   padding: 20px 0 0 0;
   display: flex;
@@ -169,11 +199,11 @@ footer {
   align-items: center;
   gap: 15px;
 }
-.footer-container .footer__nav .footer__link {
+footer .footer-container .footer__nav .footer__link {
   text-decoration: none;
   color: white;
 }
-.footer-container .footer__informacion {
+footer .footer-container .footer__informacion {
   padding: 5vh 5vw;
   grid-area: informacion;
   display: flex;
@@ -182,11 +212,11 @@ footer {
   align-items: center;
   gap: 30px;
 }
-.footer-container .footer__informacion .informacion__datos {
+footer .footer-container .footer__informacion .informacion__datos {
   color: white;
   font-size: 12px;
 }
-.footer-container .footer__empresa {
+footer .footer-container .footer__empresa {
   grid-area: redes;
   padding: 5vh 5vw;
   max-width: 450px;
@@ -197,16 +227,36 @@ footer {
   align-items: center;
   color: white;
 }
-.footer-container .footer__empresa .footer__redes__lista {
+footer .footer-container .footer__empresa .footer__redes__lista {
   display: flex;
   gap: 10px;
   flex-direction: column;
 }
-.footer-container .footer__empresa .footer__empresa__info {
+footer .footer-container .footer__empresa .footer__empresa__info {
   font-size: 1rem;
 }
-.footer-container .footer__empresa .footer__empresa__titulo {
+footer .footer-container .footer__empresa .footer__empresa__titulo {
   font-size: 1.6rem;
+}
+@media (min-width: 1200px) {
+  footer .footer-container {
+    padding: 50px 20px 50px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .footer-container .footer__nav .footer__lista {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .footer-container .footer__empresa__descrip {
+    width: 450px;
+  }
+  footer .footer-container .footer__empresa .footer__redes__lista {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .informacion {
@@ -322,20 +372,26 @@ footer {
   background-size: cover;
 }
 
-.header-index {
+.header-contacto {
+  background-image: url(../../img/img-Arquitectura4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-nosotros {
   background-image: url(../../img/img-Arquitectura1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.header-index {
-  background-image: url(../../img/img-Arquitectura2.jpg);
+.header-proyectos {
+  background-image: url(../../img/img-Arquitectura3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.header-index {
-  background-image: url(../../img/img-Arquitectura3.jpg);
+.header-servicios {
+  background-image: url(../../img/img-Arquitectura2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

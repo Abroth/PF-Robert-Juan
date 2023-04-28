@@ -1,5 +1,6 @@
 header{
     width: 100vw;
+    
     min-height: 300px;
 }
 
@@ -23,10 +24,11 @@ header{
         height: 90%;
         width: 100%;
     }
+
+
+    
+    
 }
-
-
-
 
 .navbar{
     display: flex;
@@ -50,7 +52,6 @@ header{
         top: 60px;
         bottom: 0;
         background-color: white;
-
         width: 100%;
         max-height: 225px;
         right: 0;
@@ -78,9 +79,34 @@ header{
         font-size: 1rem;
     }
 
+    @include desktop{
 
+        
+
+        .navbar__label{
+            display: none;
+        }
+        .navbar__lista{
+            display: flex;
+            width: 50vw;
+            top: 0;
+            position: absolute;
+            border: none;
+        }
+        .navbar__lista__links{
+            flex-direction: row;
+            width: 50vw;
+            justify-content: end;
+            align-items: center;
+            gap: 70px;
+            padding-right: 40px;
+        }
+
+    }
 
 }
+
+
 
 
 
