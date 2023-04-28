@@ -5,6 +5,22 @@
   font-family: "Rubik", sans-serif;
 }
 
+@keyframes entrada-portada-left {
+  0% {
+    translate: -1000px 0px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
+@keyframes entrada-portada-right {
+  0% {
+    translate: 1000px 0px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
 li {
   list-style: none;
 }
@@ -77,10 +93,6 @@ li {
   }
 }
 
-header {
-  width: 100vw;
-  height: 300px;
-}
 header .header__container {
   background-color: white;
   max-height: 7vh;
@@ -143,9 +155,6 @@ header .header__container .navbar .navbar__input:checked + .navbar__lista {
   justify-content: center;
 }
 @media (min-width: 1200px) {
-  header {
-    height: 100vh;
-  }
   header .header__container .navbar__label {
     display: none;
   }
@@ -375,34 +384,134 @@ footer .footer-container .footer__empresa .footer__empresa__titulo {
   border: 1px solid #333e51;
 }
 
-.header-index {
+.portada__index {
+  height: 50vh;
+  min-height: 400px;
   background-image: url(../../img/EdificioPortada.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding-left: 50px;
+  padding-bottom: 200px;
+}
+.portada__index .portada__titulo {
+  color: #333e51;
+  animation-name: entrada-portada-left;
+  animation-duration: 2s;
+}
+@media (min-width: 1200px) {
+  .portada__index {
+    height: 100vh;
+    min-width: 400px;
+    font-size: 3rem;
+    padding-left: 100px;
+  }
 }
 
-.header-contacto {
+.portada__contacto {
+  height: 50vh;
+  min-height: 400px;
   background-image: url(../../img/img-Arquitectura4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding-left: 30px;
+  padding-bottom: 100px;
+}
+.portada__contacto .portada__titulo {
+  color: #333e51;
+  animation-name: entrada-portada-left;
+  animation-duration: 2s;
+}
+@media (min-width: 1200px) {
+  .portada__contacto {
+    height: 100vh;
+    min-width: 400px;
+    font-size: 3rem;
+    padding-left: 100px;
+  }
 }
 
-.header-nosotros {
+.portada__nosotros {
+  height: 50vh;
+  min-height: 400px;
   background-image: url(../../img/img-Arquitectura1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 1rem;
+  padding-right: 50px;
+}
+.portada__nosotros .portada__titulo {
+  color: #333e51;
+  animation-name: entrada-portada-right;
+  animation-duration: 2s;
+}
+@media (min-width: 1200px) {
+  .portada__nosotros {
+    height: 100vh;
+    min-width: 400px;
+    font-size: 3rem;
+    padding-left: 100px;
+  }
 }
 
-.header-proyectos {
+.portada__proyectos {
+  height: 50vh;
+  min-height: 400px;
   background-image: url(../../img/img-Arquitectura3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding-left: 35px;
+}
+.portada__proyectos .portada__titulo {
+  color: #333e51;
+  animation-name: entrada-portada-left;
+  animation-duration: 2s;
+}
+@media (min-width: 1200px) {
+  .portada__proyectos {
+    height: 100vh;
+    min-width: 400px;
+    font-size: 3rem;
+    padding-left: 100px;
+  }
 }
 
-.header-servicios {
+.portada__servicios {
+  height: 50vh;
+  min-height: 400px;
   background-image: url(../../img/img-Arquitectura2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 1rem;
+  padding-right: 20px;
+  padding-bottom: 100px;
+}
+.portada__servicios .portada__titulo {
+  color: #333e51;
+  animation-name: entrada-portada-right;
+  animation-duration: 2s;
+}
+@media (min-width: 1200px) {
+  .portada__servicios {
+    height: 100vh;
+    min-width: 400px;
+    font-size: 3rem;
+    padding-left: 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

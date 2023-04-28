@@ -1,5 +1,26 @@
-.header-contacto{
+.portada__contacto{
+    height: 50vh;
+    min-height: 400px;
     background-image: url(../../img/img-Arquitectura4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding-left: 30px;
+    padding-bottom: 100px;
+    .portada__titulo{
+        color: $color-primario;
+        animation-name: entrada-portada-left;
+        animation-duration: 2s;
+    }
+
+    @include desktop{
+        height: 100vh;
+        min-width: 400px;
+        font-size: 3rem;
+        padding-left: 100px;
+    }
+
 }
+

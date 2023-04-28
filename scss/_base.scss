@@ -16,6 +16,26 @@ $color-securndario: #eeeeee;
     }
 }
 
+@keyframes entrada-portada-left{
+    0%{
+        translate: -1000px 0px;
+    }
+
+    100%{
+        translate: 0px 0px;
+    }
+}
+
+@keyframes entrada-portada-right{
+    0%{
+        translate: 1000px 0px;
+    }
+
+    100%{
+        translate: 0px 0px;
+    }
+}
+
 
 
 li{

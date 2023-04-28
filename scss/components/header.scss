@@ -1,7 +1,5 @@
 header{
-    width: 100vw;
     
-    height: 300px;
 
     .header__container{
         background-color: white;
@@ -69,22 +67,12 @@ header{
             .navbar__input:checked + .navbar__lista{
                 display: flex;
                 justify-content: center;
-            } 
-        
-            
-            
-            
-        
-            
-        
+            }         
         }
         
     }
     
     @include desktop{
-                
-        height: 100vh;
-
         .header__container{
             .navbar{
                 &__label{

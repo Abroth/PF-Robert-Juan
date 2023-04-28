@@ -1,6 +1,23 @@
-.header-proyectos{
+.portada__proyectos{
+    height: 50vh;
+    min-height: 400px;
     background-image: url(../../img/img-Arquitectura3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding-left: 35px;
+    .portada__titulo{
+        color: $color-primario;
+        animation-name: entrada-portada-left;
+        animation-duration: 2s;
+    }
+    @include desktop{
+        height: 100vh;
+        min-width: 400px;
+        font-size: 3rem;
+        padding-left: 100px;
+    }
 }
 
