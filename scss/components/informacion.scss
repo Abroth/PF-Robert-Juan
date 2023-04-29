@@ -33,6 +33,30 @@
         }
 
     }
+
+    @include desktop{
+        padding: 20px 20px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+
+        .informacion__imagenes{
+            height: 350px;
+            width: 600px;
+
+            .informacion__img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .informacion__section{
+            justify-content: center;
+            align-items: center;
+            
+        }
+    
+    }
 }
 
 

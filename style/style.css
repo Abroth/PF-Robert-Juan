@@ -149,6 +149,7 @@ header .header__container .navbar__lista .navbar__lista__links .nav__link {
   display: block;
   text-decoration: none;
   font-size: 1rem;
+  color: #333e51;
 }
 header .header__container .navbar .navbar__input:checked + .navbar__lista {
   display: flex;
@@ -172,6 +173,17 @@ header .header__container .navbar .navbar__input:checked + .navbar__lista {
     align-items: center;
     gap: 70px;
     padding-right: 40px;
+  }
+  header .header__container .navbar__lista .navbar__lista__links .nav__link {
+    padding: 5px 10px;
+    color: #333e51;
+  }
+  header .header__container .navbar__lista .navbar__lista__links .navbar__link:hover {
+    background-color: #333e51;
+    border-radius: 10px;
+  }
+  header .header__container .navbar__lista .navbar__lista__links .navbar__link:hover .nav__link:hover {
+    color: #eeeeee;
   }
 }
 
@@ -260,11 +272,24 @@ footer .footer-container .footer__empresa .footer__empresa__titulo {
     justify-content: space-around;
     align-items: center;
   }
+  footer .footer-container .footer__nav .footer__logo__img {
+    height: 200px;
+    width: 300px;
+  }
   footer .footer-container .footer__nav .footer__lista {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+  footer .footer-container .footer__nav .footer__lista .footer__link {
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  footer .footer-container .footer__nav .footer__link:hover {
+    background-color: #eeeeee;
+    color: #333e51;
   }
   footer .footer-container .footer__empresa__descrip {
     width: 450px;
@@ -306,6 +331,26 @@ footer .footer-container .footer__empresa .footer__empresa__titulo {
 .informacion__section .informacion__text {
   font-size: 1.5rem;
 }
+@media (min-width: 1200px) {
+  .informacion {
+    padding: 20px 20px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+  }
+  .informacion .informacion__imagenes {
+    height: 350px;
+    width: 600px;
+  }
+  .informacion .informacion__imagenes .informacion__img {
+    height: 100%;
+    width: 100%;
+  }
+  .informacion .informacion__section {
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .tarjetas-nosotros-container {
   padding: 50px 0;
@@ -327,6 +372,13 @@ footer .footer-container .footer__empresa .footer__empresa__titulo {
 .tarjetas-nosotros-container .tarjetas__informacion__img {
   width: 100%;
 }
+@media (min-width: 1200px) {
+  .tarjetas-nosotros-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 
 .proyectos {
   background-color: white;
@@ -334,6 +386,12 @@ footer .footer-container .footer__empresa .footer__empresa__titulo {
 }
 .proyectos__text {
   color: #333e51;
+}
+@media (min-width: 1200px) {
+  .proyectos {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .titulo__container {
@@ -382,6 +440,17 @@ footer .footer-container .footer__empresa .footer__empresa__titulo {
   padding: 15px;
   width: 80%;
   border: 1px solid #333e51;
+}
+@media (min-width: 1200px) {
+  .clientes__logo {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15px;
+    width: 100vw;
+  }
+  .clientes__logo .clientes__img {
+    width: 250px;
+  }
 }
 
 .box__container {

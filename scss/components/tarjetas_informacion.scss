@@ -21,6 +21,12 @@
             width: 100%;
         }
     }
+
+    @include desktop{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 .proyectos{
@@ -29,6 +35,11 @@
 
     &__text{
         color: $color-primario;
+    }
+
+    @include desktop{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -48,6 +59,8 @@
         display: block;
         font-size: 1.2rem;
     }
+
+    
     
 }
 

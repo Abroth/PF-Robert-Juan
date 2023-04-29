@@ -117,13 +117,32 @@ footer{
             justify-content: space-around;
             align-items: center;
 
-
+            
             .footer__nav{
+
+                .footer__logo__img{
+                    height: 200px;
+                    width: 300px;
+                }
+                
                 .footer__lista{
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
+                    
+                    .footer__link{
+                        padding: 6px 10px;
+                        border-radius: 10px;
+                        font-size: 1rem;
+                    }
+                }
+
+                
+
+                .footer__link:hover{
+                    background-color: $color-securndario;
+                    color: $color-primario;
                     
                 }
             }

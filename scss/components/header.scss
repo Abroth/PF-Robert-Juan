@@ -48,6 +48,7 @@ header{
                 max-height: 225px;
                 right: 0;
                 border-bottom: 2px solid $color-primario;
+
                 .navbar__lista__links{
                     padding: 20px;
                     gap: 20px;
@@ -60,6 +61,7 @@ header{
                         display: block;
                         text-decoration: none;
                         font-size: 1rem;
+                        color: $color-primario;
                     }
                 }
             }
@@ -67,6 +69,7 @@ header{
             .navbar__input:checked + .navbar__lista{
                 display: flex;
                 justify-content: center;
+
             }         
         }
         
@@ -92,6 +95,18 @@ header{
                         align-items: center;
                         gap: 70px;
                         padding-right: 40px;
+                        .nav__link{
+                            padding: 5px 10px;
+                            color: $color-primario;
+                        }
+
+                        .navbar__link:hover{
+                            background-color: $color-primario;
+                            border-radius: 10px;
+                            .nav__link:hover{
+                                color: $color-securndario;
+                            }   
+                        }
                     }
                 }
             }
