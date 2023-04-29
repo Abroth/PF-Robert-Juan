@@ -365,18 +365,25 @@ footer .footer-container .footer__empresa .footer__empresa__titulo {
 }
 .tarjetas-nosotros-container .tarjetas__informacion {
   max-width: 390px;
-  /* height: 25vh; */
+  height: 40vh;
   grid-area: tarjeta1;
   color: #eeeeee;
 }
 .tarjetas-nosotros-container .tarjetas__informacion__img {
   width: 100%;
+  height: 100%;
 }
 @media (min-width: 1200px) {
   .tarjetas-nosotros-container {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+  }
+  .tarjetas-nosotros-container .tarjetas__proyectos__container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }
 
@@ -389,7 +396,6 @@ footer .footer-container .footer__empresa .footer__empresa__titulo {
 }
 @media (min-width: 1200px) {
   .proyectos {
-    display: flex;
     flex-direction: column;
   }
 }

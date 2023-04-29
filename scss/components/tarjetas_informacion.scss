@@ -13,12 +13,15 @@
 
     .tarjetas__informacion{
         max-width: 390px;
-        /* height: 25vh; */
+        height: 40vh;
         grid-area: tarjeta1;
         color: $color-securndario;
     
         &__img{
             width: 100%;
+            height: 100%;
+
+            
         }
     }
 
@@ -26,7 +29,21 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+
+        
+        .tarjetas__proyectos__container{
+            width: 100vw;
+        
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+
+            
+        }
+
+        
     }
+    
 }
 
 .proyectos{
@@ -38,8 +55,8 @@
     }
 
     @include desktop{
-        display: flex;
         flex-direction: column;
+        
     }
 }
 
@@ -60,9 +77,10 @@
         font-size: 1.2rem;
     }
 
-    
+
     
 }
+
 
 
 
