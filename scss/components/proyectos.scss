@@ -1,0 +1,46 @@
+
+.tarjeta__proyectos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 1500px;
+
+    .tarjetas__proyectos__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
+
+        .tarjetas__proyectos__informacion{
+            display: flex;
+            flex-direction: column;
+            padding: 7px 7px;
+
+            .tarjetas__proyectos__img{
+                height: 300px;
+                max-width: 500px;
+                min-width: 400px;
+            }
+        }
+
+        
+        
+    }
+
+    @include desktop{
+        height: 600px;
+        gap: 70px;
+        .tarjetas__proyectos__container{
+            flex-direction: row;
+        }
+
+        .tarjetas__proyectos__informacion:hover{
+            transform: scale(1.04);
+            box-shadow: $shadow;
+        }
+    }
+
+}

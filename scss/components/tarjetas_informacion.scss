@@ -1,31 +1,27 @@
 .tarjetas-nosotros-container{
-
-    padding: 50px 0;
-    display: grid;
-    padding-bottom: 70px;
+    height: 1500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 65px;
+    gap: 200px;
 
     background-color: $color-primario;
 
     .tarjetas__informacion{
         max-width: 390px;
-        height: 40vh;
-        grid-area: tarjeta1;
+        max-height: 250px;
         color: $color-securndario;
+        
     
         &__img{
             width: 100%;
             height: 100%;
-
-            
         }
     }
 
     @include desktop{
+        height: 600px;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;

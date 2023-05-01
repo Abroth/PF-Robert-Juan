@@ -6,12 +6,13 @@
     align-items: center;
 
     &__imagenes{
-        width: 60vh;
-        height: 30vh;
+        min-width: 400px;
+        height: 300px;
 
         .informacion__img{
             height: 100%;
             width: 100%;
+
         }
     }
 
@@ -46,7 +47,7 @@
 
             .informacion__img{
                 height: 100%;
-                width: 100%;
+                width: 100%px;
             }
         }
 
