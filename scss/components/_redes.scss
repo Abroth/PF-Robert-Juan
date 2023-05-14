@@ -1,0 +1,12 @@
+.footer__redes__link{
+    text-decoration: none;
+    color: $color-securndario;
+}
+
+.footer__redes__link:hover{
+    background-color: $color-securndario;
+    color: $color-primario;
+    padding: 7px 5px;
+    border-radius: 10px;
+}
+

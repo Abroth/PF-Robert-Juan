@@ -13,6 +13,8 @@ $color-oscuro: black;
 $shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
 $text-shadows: 1px 1px 3px black;
 
+
+
 @mixin desktop{
     @media (min-width: 1200px){
         @content;
@@ -39,7 +41,11 @@ $text-shadows: 1px 1px 3px black;
     }
 }
 
-
+h1{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
 
 li{
     list-style: none;

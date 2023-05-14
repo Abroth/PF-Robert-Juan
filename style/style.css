@@ -21,6 +21,12 @@
     translate: 0px 0px;
   }
 }
+h1 {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
 li {
   list-style: none;
 }
@@ -555,6 +561,18 @@ footer .footer-container .footer__empresa .footer__empresa__titulo {
     transform: scale(1.04);
     box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
   }
+}
+
+.footer__redes__link {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.footer__redes__link:hover {
+  background-color: #eeeeee;
+  color: #333e51;
+  padding: 7px 5px;
+  border-radius: 10px;
 }
 
 .portada__index {
