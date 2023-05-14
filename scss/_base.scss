@@ -21,6 +21,12 @@ $text-shadows: 1px 1px 3px black;
     }
 }
 
+@mixin desktop-grande{
+    @media (min-width: 1500px){
+        @content;
+    }
+}
+
 @keyframes entrada-portada-left{
     0%{
         translate: -1000px 0px;

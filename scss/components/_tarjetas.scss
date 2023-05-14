@@ -28,12 +28,19 @@
     
 
     @include desktop{
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
 
         .tarjeta:hover{
             transform: scale(1.01);
             box-shadow: $shadow; 
         }
+    }
+
+    @include desktop-grande{
+        display: flex;
+        flex-direction: row;
+        gap: 5vh;
     }
 }
 
